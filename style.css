@@ -119,6 +119,16 @@ img {
   color: var(--clr-dark-blue);
 }
 
+.ft__copy {
+  line-height: 2;
+  font-size: var(--fs-14);
+}
+
+.card__quote {
+  font-size: var(--fs-14);
+  line-height: 1.85;
+}
+
 .copyright-text {
   font-size: var(--fs-13);
   letter-spacing: -0.2px;
@@ -312,9 +322,67 @@ img {
   margin-top: 0.5em;
   margin-right: 1.5em;
   text-align: left;
-  line-height: 2;
-  font-size: var(--fs-14);
 }
+
+/* TESTIMONIALS */
+.testimonials {
+  margin-top: 4em;
+}
+
+.cards {
+  margin: 4em 1em 0;
+}
+
+.card {
+  display: none;
+  background: var(--clr-very-light-gray);
+  text-align: center;
+
+  position: relative;
+
+  padding: 3.75em 1.3125em 2.625em;
+}
+
+.card.visible {
+  display: block;
+}
+
+.card__avatar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+}
+
+.card__quote {
+  margin-top: 1.25em;
+}
+
+.cards__guide {
+  margin-top: 1.625em;
+
+  display: flex;
+  place-content: center;
+  gap: 0.3em;
+}
+
+.circle {
+  width: 7px;
+  height: 8px;
+  border: 1px solid var(--clr-bright-red);
+  border-radius: 50%;
+}
+
+.circle.active {
+  background: var(--clr-bright-red);
+}
+
+.testimonials .btn {
+  margin-top: 3em;
+}
+
+/* CTA AREA */
 
 /* ================== */
 /* ================== */
