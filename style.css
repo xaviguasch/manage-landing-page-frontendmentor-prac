@@ -108,12 +108,13 @@ img {
 }
 
 .ft__number {
-  /* color: var(--clr-white); */
+  color: var(--clr-white);
   font-weight: var(--fw-bold);
 }
 
 .ft__title,
 .card__name {
+  font-size: var(--fs-16);
   font-weight: var(--fw-bold);
   color: var(--clr-dark-blue);
 }
@@ -242,6 +243,77 @@ img {
 .hero__ill-area {
   /* Flex */
   order: -1;
+}
+
+/* MAIN */
+
+.main {
+  margin-top: 6em;
+}
+
+/* FEATURES */
+
+.features {
+  display: flex;
+  flex-direction: column;
+}
+
+.features__copy {
+  padding: 0 1.5em;
+}
+
+.features__copy .title {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.features__copy .text {
+  margin-top: 0.8125em;
+}
+
+.features__list {
+  margin-top: 3.375em;
+  list-style: none;
+  /* Flex */
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.ft {
+  margin-left: 1em;
+}
+
+.ft__info {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  background: var(--clr-very-pale-red);
+  padding: 0.4em 0;
+}
+
+.ft__number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--clr-bright-red);
+  padding: 0.4em 1em;
+  border-radius: 2em;
+}
+
+.ft__title {
+  margin-left: 4em;
+}
+
+.ft__copy {
+  margin-top: 0.5em;
+  margin-right: 1.5em;
+  text-align: left;
+  line-height: 2;
+  font-size: var(--fs-14);
 }
 
 /* ================== */
