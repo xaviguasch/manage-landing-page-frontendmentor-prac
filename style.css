@@ -57,6 +57,7 @@
   --clr-very-dark-blue: hsl(233, 12%, 13%);
   --clr-very-pale-red: hsl(13, 100%, 96%);
   --clr-very-light-gray: hsl(0, 0%, 98%);
+  --clr-white-gray: hsla(9, 54%, 97%, 1);
 
   --clr-white: hsl(0, 0%, 100%);
 }
@@ -126,13 +127,122 @@ img {
 /* Links */
 /* ================== */
 
+.nav-link:link {
+  font-weight: var(--fw-bold);
+  text-decoration: none;
+  color: var(--clr-dark-blue);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--clr-dark-blue-semi-transparent);
+}
+
+/* ================== */
+/* Buttons & inputs */
+/* ================== */
+
+.btn {
+  text-decoration: none;
+  background-color: var(--clr-bright-red);
+  color: var(--clr-white-gray);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-13);
+  padding: 1em 2.4em;
+  display: inline-block;
+  border-radius: 2em;
+  box-shadow: 0px 6px 10px 3px hsla(12, 88%, 59%, 0.3);
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.7;
+  box-shadow: 0px 6px 10px 6px hsla(12, 88%, 59%, 0.3);
+}
+
+.btn--accent {
+  background-color: var(--clr-white);
+  color: var(--clr-bright-red);
+  box-shadow: none;
+}
+
+.btn--accent:hover,
+.btn--accent:focus {
+  opacity: 0.5;
+  box-shadow: none;
+}
+
+.btn--form {
+  border: var(--clr-bright-red);
+  padding: 1.1em 2.4em;
+}
+
 /* ================== */
 /* Utility styles */
 /* ================== */
 
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 2em;
+}
+
 /* ================== */
 /* SECTIONS */
 /* ================== */
+
+/* HEADER */
+.header-logo-and-nav-container {
+  margin-top: 2.8125em;
+}
+
+.header__row {
+  display: flex;
+  place-content: center space-between;
+}
+
+.header__row .logo {
+  padding-top: 0.25em;
+}
+
+.header__row .logo img {
+  width: 110px;
+  height: 18px;
+}
+
+.open-nav-btn {
+  border: none;
+  background: transparent;
+}
+
+.nav {
+  display: none;
+}
+
+/* HERO */
+.hero {
+  margin-top: 3em;
+  /* Flex */
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  gap: 1.25em;
+}
+
+.hero__copy-area .text {
+  margin-top: 0.5em;
+}
+
+.hero__copy-area .btn {
+  margin-top: 1.8125em;
+}
+
+.hero__ill-area {
+  /* Flex */
+  order: -1;
+}
 
 /* ================== */
 /* ================== */
