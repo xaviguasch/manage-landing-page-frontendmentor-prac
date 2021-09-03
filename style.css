@@ -278,6 +278,10 @@ img {
   order: -1;
 }
 
+.hero__ill-area img {
+  margin: 0 auto;
+}
+
 /* MAIN */
 
 .main {
@@ -410,6 +414,7 @@ img {
   margin-top: 2.625em;
   background: var(--clr-bright-red) url('./images/bg-simplify-section-mobile.svg')
     no-repeat;
+
   background-position: left center;
   padding: 5.7em 2em;
 }
@@ -524,30 +529,34 @@ img {
 }
 
 /* ================== */
+/* MEDIA QUERIES */
 /* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
-/* ================== */
+
+@media (min-width: 510px) {
+  .wrapper {
+    background-size: 50%;
+    background-position: left -130px top 27%; /*why useing % on the X axis doesn't work??? */
+  }
+
+  .header {
+    background: url('./images/bg-tablet-pattern.svg') no-repeat;
+    background-size: 100%;
+    background-position: left 80px top -5%; /*why useing % on the X axis doesn't work??? */
+  }
+
+  .features__copy {
+    padding: 0 2em;
+  }
+
+  .ft {
+    margin-left: 2em;
+  }
+
+  .cards {
+    margin: 4em 2em 0;
+  }
+
+  .footer {
+    padding: 0 2em;
+  }
+}
