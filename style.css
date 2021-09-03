@@ -208,6 +208,9 @@ img {
 
 .wrapper {
   overflow: hidden;
+  background: url('./images/bg-tablet-pattern.svg') no-repeat;
+  background-size: 80%;
+  background-position: left 240px top 20%; /*why useing % on the X axis doesn't work??? */
 }
 
 .container {
@@ -219,8 +222,14 @@ img {
 /* ================== */
 
 /* HEADER */
+.header {
+  background: url('./images/bg-tablet-pattern.svg') no-repeat;
+  background-size: 120%;
+  background-position: left 60px top -25%; /*why useing % on the X axis doesn't work??? */
+}
+
 .header-logo-and-nav-container {
-  margin-top: 2.8125em;
+  padding-top: 2.8125em;
 }
 
 .header__row {
