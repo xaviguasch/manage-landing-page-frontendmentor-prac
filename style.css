@@ -539,7 +539,6 @@ img {
   }
 
   .header {
-    background: url('./images/bg-tablet-pattern.svg') no-repeat;
     background-size: 100%;
     background-position: left 80px top -5%; /*why useing % on the X axis doesn't work??? */
   }
@@ -552,6 +551,10 @@ img {
     margin-left: 2em;
   }
 
+  .ft__copy {
+    margin-right: 2em;
+  }
+
   .cards {
     margin: 4em 2em 0;
   }
@@ -559,4 +562,121 @@ img {
   .footer {
     padding: 0 2em;
   }
+}
+
+@media (min-width: 510px) {
+  .wrapper {
+    background-size: 70%;
+    background-position: left -230px top 30%; /*why useing % on the X axis doesn't work??? */
+  }
+
+  .header {
+    background-size: 90%;
+    background-position: left 160px top -10%; /*why useing % on the X axis doesn't work??? */
+  }
+}
+
+@media (min-width: 700px) {
+  .wrapper {
+    background-size: 50%;
+    background-position: left -180px top 27%; /*why useing % on the X axis doesn't work??? */
+  }
+
+  .header {
+    background-size: 80%;
+    background-position: left 190px top -10%; /*why useing % on the X axis doesn't work??? */
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .wrapper {
+    background-size: 60%;
+    background-position: left -275px top 30%; /*why useing % on the X axis doesn't work??? */
+  }
+
+  .container {
+    padding: 0 4em;
+  }
+
+  .header {
+    background-size: 85%;
+    background-position: left 200px top -30%; /*why useing % on the X axis doesn't work??? */
+  }
+
+  .features__copy {
+    padding: 0 4em;
+  }
+
+  .ft {
+    margin-left: 4em;
+  }
+
+  .ft__copy {
+    margin-right: 4em;
+  }
+
+  .cards {
+    margin: 4em 4em 0;
+  }
+
+  .cta-area {
+    padding: 5.7em 4em;
+  }
+
+  .footer {
+    padding: 0 10em;
+  }
+}
+
+@media (min-width: 830px) {
+  .wrapper {
+    background-size: 60%;
+    background-position: left -350px top 33%; /*why useing % on the X axis doesn't work??? */
+  }
+
+  .container {
+    padding: 0 6em;
+  }
+
+  .header {
+    background-size: 80%;
+    background-position: left 250px top -50%; /*why useing % on the X axis doesn't work??? */
+  }
+
+  .features__copy {
+    padding: 0 6em;
+  }
+
+  .ft {
+    margin-left: 6em;
+  }
+
+  .ft__copy {
+    margin-right: 6em;
+  }
+
+  .cards {
+    margin: 4em 6em 0;
+  }
+
+  .cta-area {
+    padding: 5.7em 6em;
+  }
+}
+
+@media (min-width: 950px) {
+  .wrapper {
+    background-size: 60%;
+    background-position: left -400px top 35%; /*why useing % on the X axis doesn't work??? */
+  }
+
+  .header {
+    background-size: 70%;
+    background-position: left 350px top -65%; /*why useing % on the X axis doesn't work??? */
+  }
+}
+
+/* Desktop view */
+@media (min-width: 1080px) {
 }
