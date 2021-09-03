@@ -725,4 +725,62 @@ img {
 
   /* Buttons & inputs  */
   /*  PENDING */
+
+  /* Utility styles */
+
+  .wrapper {
+    /* overflow: hidden;
+    background: url('./images/bg-tablet-pattern.svg') no-repeat;
+    background-size: 80%;
+    background-position: left 240px top 20%; */
+  }
+
+  .container {
+    /* padding: 0 6em; */
+  }
+
+  /* HEADER */
+  .header {
+    background: url('./images/bg-tablet-pattern.svg') no-repeat;
+    background-size: 60%;
+    background-position: right -190px top -140px;
+  }
+
+  /* Hero */
+  .hero {
+    margin-top: 8.25em;
+    padding: 0 6em;
+    /* Flex */
+    flex-direction: row;
+    place-content: space-between;
+    gap: 3em;
+  }
+
+  .hero__copy-area.container {
+    padding: 0;
+  }
+
+  .copy-text {
+    width: 445px;
+
+    text-align: left;
+  }
+
+  .hero__ill-area {
+    /* Flex */
+    order: 0;
+  }
+
+  .hero__copy-area .text {
+    margin-top: 2em;
+  }
+
+  .hero__copy-area .btn {
+    margin-top: 2.5em;
+  }
+
+  /* MAIN */
+  .main {
+    margin-top: 8.25em;
+  }
 }
