@@ -735,10 +735,6 @@ img {
     background-position: left 240px top 20%; */
   }
 
-  .container {
-    /* padding: 0 6em; */
-  }
-
   /* HEADER */
   .header {
     background: url('./images/bg-tablet-pattern.svg') no-repeat;
@@ -758,6 +754,8 @@ img {
 
   .hero__copy-area.container {
     padding: 0;
+
+    flex-basis: 100%;
   }
 
   .copy-text {
@@ -769,6 +767,8 @@ img {
   .hero__ill-area {
     /* Flex */
     order: 0;
+
+    flex-basis: 100%;
   }
 
   .hero__copy-area .text {
@@ -782,5 +782,47 @@ img {
   /* MAIN */
   .main {
     margin-top: 8.25em;
+  }
+
+  /* Features */
+
+  .features {
+    padding: 0 6em;
+
+    flex-direction: row;
+  }
+
+  .features__copy {
+    padding: 0;
+    text-align: left;
+
+    flex-basis: 100%;
+  }
+
+  .features__copy .title {
+    width: unset;
+  }
+
+  .features__copy .text {
+    margin-top: 1.75em;
+    max-width: 340px;
+  }
+
+  .features__list {
+    margin-top: 0;
+    flex-basis: 100%;
+  }
+
+  .feat {
+    margin-left: 0;
+  }
+
+  .feat__info {
+    background: none;
+  }
+
+  .feat__copy {
+    margin-top: 1.25em;
+    margin-right: 0;
   }
 }
