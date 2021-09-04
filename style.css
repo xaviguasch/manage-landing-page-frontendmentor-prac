@@ -790,6 +790,7 @@ img {
     padding: 0 6em;
 
     flex-direction: row;
+    gap: 1em;
   }
 
   .features__copy {
@@ -821,8 +822,52 @@ img {
     background: none;
   }
 
+  .feat__number {
+    padding: 0.45em 1.55em;
+  }
+
+  .feat__title {
+    margin-left: 6em;
+  }
+
   .feat__copy {
     margin-top: 1.25em;
+    margin-left: 7em;
     margin-right: 0;
+  }
+
+  /* TESTIMONIALS */
+  .testimonials {
+    margin-top: 9.125em;
+  }
+
+  .cards {
+    margin-top: 6.5em;
+  }
+
+  .cards-slider {
+  }
+
+  /* CTA AREA */
+  .cta-area {
+    margin-top: 11.25em;
+    padding: 3.875em 6em;
+
+    background: var(--clr-bright-red) url(./images/bg-simplify-section-desktop.svg)
+      no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title--accent {
+    max-width: 450px;
+    text-align: left;
+  }
+
+  .cta-area .btn {
+    margin-top: unset;
   }
 }
