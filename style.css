@@ -671,6 +671,14 @@ img {
     background-position: left 200px top -30%; /*why useing % on the X axis doesn't work??? */
   }
 
+  .nav {
+    padding: 2.8125em 4em 0;
+  }
+
+  .nav .header__row {
+    padding: 0;
+  }
+
   .features__copy {
     padding: 0 4em;
   }
@@ -709,6 +717,49 @@ img {
   .header {
     background-size: 80%;
     background-position: left 250px top -50%; /*why useing % on the X axis doesn't work??? */
+  }
+
+  .header-logo-and-nav-container > .header__row {
+    display: none;
+  }
+
+  .nav {
+    position: unset;
+    top: unset;
+    left: unset;
+    right: unset;
+    bottom: unset;
+
+    padding: 0 4em;
+    width: unset;
+    height: unset;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+
+    background: unset;
+
+    z-index: unset;
+  }
+
+  .nav .buttons-area {
+    display: none;
+  }
+
+  .nav .btn {
+    display: block;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+    background: unset;
+    padding: 0;
   }
 
   .features__copy {
@@ -807,6 +858,10 @@ img {
     background: url('./images/bg-tablet-pattern.svg') no-repeat;
     background-size: 60%;
     background-position: right -190px top -140px;
+  }
+
+  .nav-list {
+    gap: 2em;
   }
 
   /* Hero */
