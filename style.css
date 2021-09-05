@@ -251,12 +251,23 @@ img {
 .open-nav-btn {
   border: none;
   background: transparent;
+  cursor: pointer;
+}
+
+/* Add closed attribute when the modal is opened so the btn doesn't overlap */
+.open-nav-btn.open-nav-btn--hidden {
+  display: none;
 }
 
 .nav {
   position: fixed;
-  top: 0;
+  top: -100%;
   left: 0;
+  right: 0;
+  bottom: 0;
+
+  transform: translateY(0);
+  transition: transform 500ms;
 
   padding: 2.8125em 0.85em 0;
   width: 100%;
@@ -277,6 +288,10 @@ img {
   z-index: 10;
 }
 
+.navigation-open {
+  transform: translateY(100%);
+}
+
 .nav .header__row {
   padding: 0 0.65em;
 }
@@ -284,6 +299,7 @@ img {
 .nav .close-nav-btn {
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 .nav .header__row .buttons-area {
