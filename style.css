@@ -983,6 +983,7 @@ img {
 
   /* CTA AREA */
   .cta-area {
+    padding: 0 6em;
     margin-top: 11.25em;
     /* Background */
     background: var(--clr-bright-red) url(./images/bg-simplify-section-desktop.svg)
@@ -1120,6 +1121,10 @@ img {
   .testimonials {
     margin: 9.125em auto 0;
     max-width: 1400px;
+  }
+
+  .cta-area {
+    padding: 0;
   }
 
   .cta-area--copy {
