@@ -1150,7 +1150,7 @@ img {
   }
 }
 
-@media (min-width: 200px) {
+@media (min-width: 2000px) {
   .wrapper {
     background-size: 40%;
     background-position: left -600px top 65%;
