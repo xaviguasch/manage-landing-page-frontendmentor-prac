@@ -153,7 +153,8 @@ img {
   color: var(--clr-dark-blue-semi-transparent);
 }
 
-.ftr__link:link {
+.ftr__link:link,
+.ftr__link:visited {
   font-size: var(--fs-15);
   font-weight: var(--fw-regular);
   color: var(--clr-white);
@@ -300,9 +301,6 @@ img {
   border: none;
   background: transparent;
   cursor: pointer;
-}
-
-.nav .header__row .buttons-area {
 }
 
 .nav .btn {
@@ -466,6 +464,8 @@ img {
   height: 8px;
   border: 1px solid var(--clr-bright-red);
   border-radius: 50%;
+
+  cursor: pointer;
 }
 
 .circle.active {
@@ -536,6 +536,7 @@ img {
 .ftr__list {
   text-align: left;
   line-height: 2;
+  list-style: none;
 }
 
 .ftr__logo-and-socials {
@@ -640,6 +641,11 @@ img {
   .header {
     background-size: 90%;
     background-position: left 160px top -10%; /*why useing % on the X axis doesn't work??? */
+  }
+
+  .footer__elements {
+    max-width: 450px;
+    margin: 0 auto;
   }
 }
 
@@ -793,6 +799,11 @@ img {
     background-size: 70%;
     background-position: left 350px top -65%; /*why useing % on the X axis doesn't work??? */
   }
+
+  .card {
+    max-width: 750px;
+    margin: 0 auto;
+  }
 }
 
 /* Desktop view */
@@ -836,21 +847,6 @@ img {
   .copyright-text {
     font-size: var(--fs-13);
     letter-spacing: -0.2px;
-  }
-
-  /* Links */
-  /*  PENDING */
-
-  /* Buttons & inputs  */
-  /*  PENDING */
-
-  /* Utility styles */
-
-  .wrapper {
-    /* overflow: hidden;
-    background: url('./images/bg-tablet-pattern.svg') no-repeat;
-    background-size: 80%;
-    background-position: left 240px top 20%; */
   }
 
   /* HEADER */
@@ -967,9 +963,6 @@ img {
     margin-top: 6.5em;
   }
 
-  .cards-slider {
-  }
-
   /* CTA AREA */
   .cta-area {
     margin-top: 11.25em;
@@ -1000,6 +993,7 @@ img {
   }
 
   .footer__elements {
+    max-width: unset;
     padding-top: unset;
 
     grid-template-columns: 1fr 1.5fr 1fr;
@@ -1071,4 +1065,7 @@ img {
   .attribution {
     margin-top: 6em;
   }
+}
+
+@media (min-width: 1440px) {
 }
