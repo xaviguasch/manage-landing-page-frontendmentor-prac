@@ -642,7 +642,7 @@ img {
   }
 }
 
-@media (min-width: 510px) {
+@media (min-width: 610px) {
   .wrapper {
     background-size: 70%;
     background-position: left -230px top 30%; /*why useing % on the X axis doesn't work??? */
